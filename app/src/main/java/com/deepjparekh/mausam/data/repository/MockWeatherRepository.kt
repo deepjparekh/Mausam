@@ -5,9 +5,11 @@ import com.deepjparekh.mausam.data.model.HourlyForecast
 import com.deepjparekh.mausam.data.model.WeatherData
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
+import javax.inject.Inject
 
-class MockWeatherRepository: WeatherRepository {
-    override fun getLocalWeather(): Flow<WeatherData> = flowOf(mockWeatherData)
+class MockWeatherRepository @Inject constructor() : WeatherRepository {
+    override fun getLocalWeather(): Result<Flow<WeatherData>> =
+        Result.success(flowOf(mockWeatherData))
 
     private val mockWeatherData = WeatherData(
         location = "New York",

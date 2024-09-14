@@ -4,5 +4,5 @@ import com.deepjparekh.mausam.data.model.WeatherData
 import kotlinx.coroutines.flow.Flow
 
 interface WeatherRepository {
-    fun getLocalWeather(): Flow<WeatherData>
+    fun getLocalWeather(): Result<Flow<WeatherData>>
 }
