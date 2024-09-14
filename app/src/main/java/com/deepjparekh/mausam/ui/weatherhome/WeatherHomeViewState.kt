@@ -1,4 +1,4 @@
-package com.deepjparekh.mausam.ui.theme
+package com.deepjparekh.mausam.ui.weatherhome
 
 import com.deepjparekh.mausam.data.model.WeatherData
 

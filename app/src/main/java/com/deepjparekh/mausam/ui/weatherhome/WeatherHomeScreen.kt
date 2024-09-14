@@ -1,4 +1,4 @@
-package com.deepjparekh.mausam.ui
+package com.deepjparekh.mausam.ui.weatherhome
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -11,7 +11,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.deepjparekh.mausam.ui.theme.WeatherHomeViewState
 
 @Composable
 fun WeatherHomeScreen(
@@ -42,7 +41,10 @@ fun WeatherHomeScreen(
             textAlign = TextAlign.Center,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(8.dp)
+                .padding(
+                    horizontal = 12.dp,
+                    vertical = 60.dp
+                )
         )
     }
 }

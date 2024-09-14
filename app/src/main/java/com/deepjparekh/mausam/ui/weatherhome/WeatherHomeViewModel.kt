@@ -1,9 +1,8 @@
-package com.deepjparekh.mausam.ui
+package com.deepjparekh.mausam.ui.weatherhome
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deepjparekh.mausam.data.repository.WeatherRepository
-import com.deepjparekh.mausam.ui.theme.WeatherHomeViewState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
